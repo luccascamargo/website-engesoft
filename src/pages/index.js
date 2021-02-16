@@ -1,15 +1,25 @@
+import React from 'react'
 import Head from 'next/head'
 
-import VercelLogo from '../assets/vercel.svg'
+import { Container } from '../styles/pages/Home'
+import Header from '../components/header'
+import Main from '../components/main'
+import Section from '../components/section'
+import Footer from '../components/footer'
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Alterado</title>
-      </Head>
-      <h1>Hello World</h1>
-      <VercelLogo />
+      <Container>
+        <Head>
+          <title>Engesoft | Desenvolvimento de Sistemas</title>
+        </Head>
+
+        <Header />
+        <Main />
+        <Section />
+        <Footer />
+      </Container>
     </>
   )
 }
