@@ -5,7 +5,7 @@ export const Container = styled.div`
   }
   width: 100vw;
   height: 90vh;
-  background: #222222;
+  background: #081229;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,7 +17,7 @@ export const Container = styled.div`
     transition: 1s all;
 
     &:hover {
-      color: #0093e9;
+      color: #ec5990;
     }
   }
 
@@ -28,6 +28,10 @@ export const Container = styled.div`
   }
 
   .container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 70%;
     height: 50vh;
     text-align: center;
@@ -35,54 +39,50 @@ export const Container = styled.div`
     margin: 50px auto;
 
     #input-big {
-      width: 50em;
+      width: 40em;
       height: 8em;
     }
 
     input {
-      background: #222222;
-      border: 1px solid #d6d6d6;
+      background: #e2e2e6;
+      border: 1px solid #222222;
       border-radius: 15px;
-      width: 25em;
+      width: 40em;
       height: 3em;
       margin: 5px 5px;
       text-align: start;
       padding: 15px;
-      color: #d6d6d6;
+      color: #222222;
       transition: 1s all;
 
       &:focus {
-        border: 1px solid #0093e9;
+        border: 1px solid #ec5990;
       }
     }
 
     button {
-      width: 50%;
+      width: 40%;
       height: 3em;
-      border: 1px solid #d6d6d6;
+      border: none;
       border-radius: 15px;
-      background: #222222;
+      background: #ec5990;
       margin-top: 5px;
-      color: #d6d6d6;
+      color: #e2e2e6;
       cursor: pointer;
       transition: 1s all;
+      text-transform: uppercase;
+      letter-spacing: 5px;
 
       &:hover {
-        background-color: #0093e9;
-        background-image: linear-gradient(45deg, #0093e9 0%, #80d0c7 100%);
-        color: #222222;
-        border: none;
+        background: #bf1650;
+        color: #fff;
       }
-    }
-  }
-
-  @media (max-width: 1380px) {
-    .container-form > input {
-      width: 20em;
-    }
-
-    .container-form #input-big {
-      width: 40em;
+      &:active {
+        transition: 0.3s all;
+        transform: translateY(3px);
+        border: 1px solid transparent;
+        opacity: 0.8;
+      }
     }
   }
 
@@ -120,10 +120,11 @@ export const Container = styled.div`
 export const Footer = styled.div`
   width: 100%;
   height: 10vh;
-  background: #222222;
+  background: #081229;
 
   h2 {
-    width: 50%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,6 +142,18 @@ export const Footer = styled.div`
 
       #tel {
         margin-left: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    > h2 {
+      width: 90%;
+
+      .icon {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
       }
     }
   }

@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 import { Container } from './styles'
-import LogoVercel from '../../assets/vercel.svg'
+import LogoVercel from '../../assets/vercelWhite.svg'
 
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
 
@@ -54,6 +54,7 @@ export default function Footer() {
             </a>
           </Link>
         </div>
+        {/* <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */}
       </Container>
     </>
   )

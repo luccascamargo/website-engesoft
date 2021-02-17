@@ -9,7 +9,7 @@ export const Container = styled.div`
     text-decoration: none;
   }
   width: 100vw;
-  background: #222222;
+  background: #081229;
 
   > footer {
     width: 60%;
@@ -50,7 +50,7 @@ export const Container = styled.div`
       background: red;
       height: 70%;
       > iframe {
-        background: #222222;
+        background: #081229;
       }
     }
   }
@@ -75,7 +75,7 @@ export const Container = styled.div`
     }
 
     a:hover {
-      color: rgba(0, 147, 233, 1);
+      color: #ec5990;
     }
   }
 

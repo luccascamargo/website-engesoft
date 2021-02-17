@@ -6,6 +6,7 @@ import Header from '../components/header'
 import Main from '../components/main'
 import Section from '../components/section'
 import Footer from '../components/footer'
+import Aside from '../components/aside'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
 
         <Header />
         <Main />
+        <Aside />
         <Section />
         <Footer />
       </Container>

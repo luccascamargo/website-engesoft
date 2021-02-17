@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  background: #222222;
+  background: #e2e2e6;
   width: 100%;
   height: 60vh;
   display: flex;
@@ -23,7 +23,7 @@ export const Container = styled.div`
     > span {
       font-family: 'Roboto';
       font-weight: 500;
-      color: #e1e1e6;
+      color: #222222;
     }
 
     > p {
@@ -31,26 +31,24 @@ export const Container = styled.div`
       font-weight: 300;
       font-size: 20px;
       padding-top: 20px;
-      color: #e1e1e6;
+      color: #222222;
     }
   }
 
   #link {
-    border-radius: 3px;
-    padding: 0.5rem 0;
+    border-radius: 10px;
+    border: 2px solid #081229;
+    padding: 0.5em 0em;
     margin: 5rem 1rem;
     width: 13rem;
-    color: #e1e1e6;
+    color: #081229;
     text-align: center;
     text-decoration: none;
-    border: 1px solid #e1e1e6;
     transition: 0.5s;
 
     :hover {
-      background-color: #0093e9;
-      background-image: linear-gradient(45deg, #0093e9 0%, #80d0c7 100%);
-      color: #222222;
-      border: 1px solid #e1e1e6;
+      background: #081229;
+      color: #e2e2e6;
     }
   }
 

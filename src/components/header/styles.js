@@ -1,5 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 
+import img from '../../assets/wallp2.jpg'
+
 const opacityText = keyframes`
   0% {
     opacity: 0;
@@ -29,7 +31,7 @@ export const Container = styled.div`
   animation: ${backgroundSize} 4s 1 ease-out;
   width: 100%;
   height: 100vh;
-  background: #375da2;
+  background: url(${img}) no-repeat left top fixed;
   -webkit-background-size: 110%;
   -moz-background-size: 110%;
   -o-background-size: 110%;
@@ -51,9 +53,8 @@ export const Container = styled.div`
     transition: 0.5s;
 
     :hover {
-      background: #375da2;
       color: #e1e1e1;
-      border: 1px solid #375da2;
+      border: 1px solid #ec5990;
     }
   }
 
@@ -68,7 +69,7 @@ export const Container = styled.div`
       font-size: 5rem;
       font-family: 'Roboto';
       font-weight: 400;
-      color: #e1e1e1;
+      color: #e2e2e6;
     }
 
     > p {
@@ -76,7 +77,7 @@ export const Container = styled.div`
       font-size: 2rem;
       font-family: 'Roboto';
       font-weight: 400;
-      color: #e1e1e1;
+      color: #e2e2e6;
 
       margin-top: 15px;
     }

@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 import { Container } from './styles'
-import LogoVercel from '../../assets/vercel.svg'
+import LogoVercel from '../../assets/vercelWhite.svg'
 
 export default function header() {
   return (
