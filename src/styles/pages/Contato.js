@@ -84,6 +84,20 @@ export const Container = styled.div`
         opacity: 0.8;
       }
     }
+
+    .error {
+      width: 32em;
+      color: #bf1650;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 0.9em;
+      ::before {
+        display: inline;
+        content: '⚠';
+        margin-right: 2px;
+      }
+    }
   }
 
   @media (max-width: 1116px) {
