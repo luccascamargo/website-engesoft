@@ -1,8 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 const nodemailer = require('nodemailer')
-const user = 'lucas.camagon@outlook.com'
-const pass = 'C4m4rg03gg'
+const user = 'lucascamagon@outlook.com'
+const pass = 'lucas123'
 
 export default (req, res) => {
   const { name, email, phone, company, message } = req.body
