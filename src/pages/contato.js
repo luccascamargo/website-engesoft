@@ -6,6 +6,12 @@ import axios from 'axios'
 
 import { Container, Footer } from '../styles/pages/Contato'
 import Back from '../assets/back.svg'
+import Check from '../assets/check.svg'
+
+function iniciaModal(container) {
+  const modal = document.querySelector('.container-alert')
+  modal.classList.add('mostrar')
+}
 
 export default function contato() {
   const { register, handleSubmit, errors, getValues, reset } = useForm()
@@ -18,6 +24,7 @@ export default function contato() {
 
     axios.post('/api/register', { name, email, phone, company, message })
     reset()
+    iniciaModal()
   }
   return (
     <>
@@ -84,6 +91,19 @@ export default function contato() {
             <button type="submit">Enviar</button>
           </div>
         </form>
+        <div className="container-alert">
+          <div>
+            <Check width="100" />
+            <span>
+              Sua mensagem já está conosco, retornaremos o mais breve possível
+            </span>
+            <button className="btn-alert">
+              <Link href="/">
+                <a>ok</a>
+              </Link>
+            </button>
+          </div>
+        </div>
       </Container>
       <Footer>
         <h2>

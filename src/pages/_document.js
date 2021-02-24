@@ -40,6 +40,10 @@ class MyDocument extends Document {
           />
 
           <link rel="icon" href="/favicon.ico" />
+          <script
+            src="https://kit.fontawesome.com/a7945eef75.js"
+            crossOrigin="anonymous"
+          ></script>
         </Head>
         <body>
           <Main />

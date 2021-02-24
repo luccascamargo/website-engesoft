@@ -46,6 +46,10 @@ export const Container = styled.div`
     width: 50%;
     display: flex;
     justify-content: center;
+
+    .logo-vercel {
+      width: 150px;
+    }
   }
 
   .clients ul {
@@ -97,8 +101,11 @@ export const Container = styled.div`
 
     .clients {
       display: flex;
-      flex-direction: column;
       padding: 10px;
+
+      .logo-vercel {
+        width: 100px;
+      }
     }
   }
 `

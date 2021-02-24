@@ -18,30 +18,30 @@ export default function Section() {
         <div className="clients">
           <ul>
             <li>
-              <LogoVercel width="150" alt="Vercel" />
+              <LogoVercel className="logo-vercel" alt="Vercel" />
             </li>
             <li>
-              <LogoVercel width="150" alt="Vercel" />
+              <LogoVercel className="logo-vercel" alt="Vercel" />
             </li>
             <li>
-              <LogoVercel width="150" alt="Vercel" />
+              <LogoVercel className="logo-vercel" alt="Vercel" />
             </li>
             <li>
-              <LogoVercel width="150" alt="Vercel" />
+              <LogoVercel className="logo-vercel" alt="Vercel" />
             </li>
           </ul>
           <ul>
             <li>
-              <LogoVercel width="150" alt="Vercel" />
+              <LogoVercel className="logo-vercel" alt="Vercel" />
             </li>
             <li>
-              <LogoVercel width="150" alt="Vercel" />
+              <LogoVercel className="logo-vercel" alt="Vercel" />
             </li>
             <li>
-              <LogoVercel width="150" alt="Vercel" />
+              <LogoVercel className="logo-vercel" alt="Vercel" />
             </li>
             <li>
-              <LogoVercel width="150" alt="Vercel" />
+              <LogoVercel className="logo-vercel" alt="Vercel" />
             </li>
           </ul>
         </div>

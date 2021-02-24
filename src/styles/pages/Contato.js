@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 export const Container = styled.div`
   * {
     font-family: 'Roboto';
@@ -9,6 +10,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 
   .home {
     color: #d6d6d6;
@@ -100,6 +102,59 @@ export const Container = styled.div`
     }
   }
 
+  .opacity {
+    opacity: 0.5;
+  }
+
+  .container-alert {
+    background: #222222;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40rem;
+    height: 20rem;
+    border-radius: 10px;
+    align-items: center;
+    color: #d6d6d6;
+    display: flex;
+    display: none;
+
+    > div {
+      width: 100%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      > span {
+        text-align: center;
+      }
+
+      > button {
+        width: 5em;
+        height: 2em;
+        background: #32bea6;
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #222222;
+        cursor: pointer;
+
+        > a {
+          text-decoration: none;
+          color: #222222;
+        }
+      }
+    }
+  }
+
+  .mostrar {
+    display: flex;
+  }
+
   @media (max-width: 1116px) {
     h1 {
       font-size: 1.5em;
@@ -125,6 +180,22 @@ export const Container = styled.div`
   }
 
   @media (max-width: 720px) {
+    .container-alert {
+      width: 15rem;
+      height: 15rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      > div {
+        height: 90%;
+      }
+
+      > div > span {
+        text-align: center;
+      }
+    }
     .home {
       margin: 50px auto 0 auto;
     }

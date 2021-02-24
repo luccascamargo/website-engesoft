@@ -31,7 +31,7 @@ export const Container = styled.div`
   animation: ${backgroundSize} 4s 1 ease-out;
   width: 100%;
   height: 100vh;
-  background: url(${img}) no-repeat left top fixed;
+  background: url(${img}) no-repeat center fixed;
   -webkit-background-size: 110%;
   -moz-background-size: 110%;
   -o-background-size: 110%;
@@ -118,6 +118,10 @@ export const Container = styled.div`
     }
   }
 
+  .remove {
+    display: none;
+  }
+
   @media (max-width: 1550px) {
     .mouse {
       margin-top: 10rem;
@@ -129,14 +133,6 @@ export const Container = styled.div`
   }
 
   @media (max-width: 1266px) {
-    background-image: linear-gradient(
-      to right bottom,
-      #051937,
-      #09436a,
-      #00739e,
-      #00a7ce,
-      #02def8
-    );
     h1 > span {
       font-size: 3rem;
       color: #2d2d2d;

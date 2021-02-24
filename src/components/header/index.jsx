@@ -9,7 +9,7 @@ export default function header() {
     <>
       <>
         <Container>
-          <div>
+          <div className="owner">
             <Link href="#">
               <a>
                 <LogoVercel width="150" alt="Vercel" />
