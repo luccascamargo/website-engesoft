@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100vw;
-  height: 60vh;
+  height: 70vh;
 
   .container {
     width: 75%;
@@ -82,7 +82,7 @@ export const Container = styled.div`
           flex-direction: column;
 
           > span {
-            font-size: 2rem;
+            font-size: 1em;
           }
 
           > p {

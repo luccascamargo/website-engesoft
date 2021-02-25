@@ -32,10 +32,10 @@ export default function Aside() {
             <span>Faturamento</span>
           </div>
         </aside>
+        <Link href="/">
+          <a className="link-cases">Saiba mais</a>
+        </Link>
       </main>
-      <Link href="/">
-        <a className="link-cases">Saiba mais</a>
-      </Link>
     </Container>
   )
 }

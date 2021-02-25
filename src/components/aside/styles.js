@@ -34,9 +34,10 @@ export const Container = styled.div`
   > main {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 60%;
+    height: 70%;
     margin: 0 auto;
     display: flex;
 
@@ -112,9 +113,5 @@ export const Container = styled.div`
 
   @media (max-width: 347px) {
     height: 85vh;
-
-    .link-cases {
-      margin-top: 7em;
-    }
   }
 `

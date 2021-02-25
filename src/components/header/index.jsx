@@ -3,16 +3,21 @@ import Link from 'next/link'
 
 import { Container } from './styles'
 import LogoVercel from '../../assets/vercelWhite.svg'
+import Img from '../../assets/wallp2.jpg'
 
 export default function header() {
   return (
     <>
       <>
-        <Container>
+        <Container
+          style={{
+            background: `url(${Img}) no-repeat center fixed`
+          }}
+        >
           <div className="owner">
             <Link href="#">
               <a>
-                <LogoVercel width="150" alt="Vercel" />
+                <LogoVercel className="logo-vercel" alt="Vercel" />
               </a>
             </Link>
             <Link href="/contato">

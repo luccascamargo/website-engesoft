@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   background: #e2e2e6;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +21,7 @@ export const Container = styled.div`
     max-width: 60vw;
 
     > span {
+      max-width: 80%;
       font-family: 'Roboto';
       font-weight: 500;
       color: #222222;
@@ -29,7 +30,7 @@ export const Container = styled.div`
     > p {
       font-family: 'Roboto';
       font-weight: 300;
-      font-size: 20px;
+      font-size: 1.1rem;
       padding-top: 20px;
       color: #222222;
     }
@@ -55,8 +56,6 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     h1 {
       margin-top: 40px;
-      > span {
-      }
     }
   }
 

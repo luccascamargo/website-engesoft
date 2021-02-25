@@ -1,7 +1,5 @@
 import styled, { keyframes } from 'styled-components'
 
-import img from '../../assets/wallp2.jpg'
-
 const opacityText = keyframes`
   0% {
     opacity: 0;
@@ -11,15 +9,6 @@ const opacityText = keyframes`
     opacity: 1;
   }`
 
-const backgroundSize = keyframes`
-0% {
-  background-size: 100% 100%;
-}
-
-100% {
-  background-size: 110% 110%;
-}`
-
 const wheel = keyframes`
   to {
 		opacity: 0;
@@ -28,14 +17,16 @@ const wheel = keyframes`
 `
 
 export const Container = styled.div`
-  animation: ${backgroundSize} 4s 1 ease-out;
   width: 100%;
   height: 100vh;
-  background: url(${img}) no-repeat center fixed;
   -webkit-background-size: 110%;
   -moz-background-size: 110%;
   -o-background-size: 110%;
   background-size: 110% 110%;
+
+  .logo-vercel {
+    width: 150px;
+  }
 
   #button-header {
     position: relative;
@@ -62,7 +53,8 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 17rem;
+    padding-top: 8em;
+    opacity: 0.7;
 
     > span {
       animation: ${opacityText} 10s;
@@ -102,6 +94,7 @@ export const Container = styled.div`
     margin-top: 15rem;
     animation: ${opacityText} 10s;
     transition: all 1s;
+    opacity: 0.7;
     &::before {
       content: '';
       width: 10px;
@@ -112,7 +105,7 @@ export const Container = styled.div`
       transform: translateX(-50%);
       background-color: #e1e1e1;
       border-radius: 50%;
-      opacity: 1;
+      opacity: 0.7;
       animation: ${wheel} 2s infinite;
       -webkit-animation: ${wheel} 2s infinite;
     }
@@ -135,20 +128,10 @@ export const Container = styled.div`
   @media (max-width: 1266px) {
     h1 > span {
       font-size: 3rem;
-      color: #2d2d2d;
     }
 
     h1 > p {
       font-size: 1.5rem;
-      color: #2d2d2d;
-    }
-
-    .mouse {
-      border: 3px solid #2d2d2d;
-
-      &::before {
-        background-color: #2d2d2d;
-      }
     }
   }
 
@@ -206,6 +189,10 @@ export const Container = styled.div`
   }
 
   @media (max-width: 450px) {
+    .logo-vercel {
+      margin-left: 10px;
+      width: 100px;
+    }
     div {
       width: 100%;
 
@@ -215,6 +202,8 @@ export const Container = styled.div`
 
       #button-header {
         margin-right: 15px;
+        width: 100px;
+        font-size: 10px;
       }
     }
   }
