@@ -19,10 +19,6 @@ const wheel = keyframes`
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
-  -webkit-background-size: 110%;
-  -moz-background-size: 110%;
-  -o-background-size: 110%;
-  background-size: 110% 110%;
 
   .logo-vercel {
     width: 150px;
@@ -42,10 +38,11 @@ export const Container = styled.div`
     font-size: 13px;
     color: #c1c1c1;
     transition: 0.5s;
+    opacity: 0.7;
 
     :hover {
       color: #e1e1e1;
-      border: 1px solid #ec5990;
+      opacity: 1;
     }
   }
 
