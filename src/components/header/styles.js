@@ -94,7 +94,6 @@ export const Container = styled.div`
     left: 50%;
     top: 70%;
     transform: translate(-50%, -50%);
-    /* margin-top: 15rem; */
     animation: ${opacityText} 10s;
     transition: all 1s;
     opacity: 0.7;
@@ -119,10 +118,6 @@ export const Container = styled.div`
   }
 
   @media (max-width: 1550px) {
-    .mouse {
-      margin-top: 10rem;
-    }
-
     h1 > span {
       font-size: 4rem;
     }
