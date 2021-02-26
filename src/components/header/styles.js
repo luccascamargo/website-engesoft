@@ -50,10 +50,14 @@ export const Container = styled.div`
   }
 
   > h1 {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 8em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0.7;
 
     > span {
@@ -115,12 +119,6 @@ export const Container = styled.div`
 
   .remove {
     display: none;
-  }
-
-  @media (max-width: 1550px) {
-    h1 > span {
-      font-size: 4rem;
-    }
   }
 
   @media (max-width: 1266px) {
