@@ -214,8 +214,9 @@ export const Footer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 13px;
     margin: 0 auto;
+    padding-top: 10px;
+    font-size: 13px;
     font-family: 'Roboto';
     font-weight: 400;
     color: #d6d6d6;

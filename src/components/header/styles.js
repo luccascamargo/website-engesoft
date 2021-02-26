@@ -1,5 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 
+import Img from '../../assets/wallp2.jpg'
+
 const opacityText = keyframes`
   0% {
     opacity: 0;
@@ -19,6 +21,7 @@ const wheel = keyframes`
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
+  background: url(${Img}) no-repeat center fixed;
 
   .logo-vercel {
     width: 150px;
@@ -87,8 +90,11 @@ export const Container = styled.div`
     height: 60px;
     border: 3px solid #e1e1e1;
     border-radius: 60px;
-    position: relative;
-    margin-top: 15rem;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    /* margin-top: 15rem; */
     animation: ${opacityText} 10s;
     transition: all 1s;
     opacity: 0.7;
@@ -178,10 +184,6 @@ export const Container = styled.div`
         font-size: 0.9rem;
         max-width: 200px;
       }
-    }
-
-    .mouse {
-      margin-top: 10rem;
     }
   }
 
