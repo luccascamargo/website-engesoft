@@ -181,9 +181,22 @@ export const Container = styled.div`
   }
 
   @media (max-width: 450px) {
+    background-image: linear-gradient(
+      to right top,
+      #081229,
+      #071f45,
+      #042c62,
+      #013981,
+      #0046a1
+    );
     .logo-vercel {
       margin-left: 10px;
       width: 100px;
+    }
+
+    #button-header {
+      opacity: 1;
+      font-weight: 500;
     }
     div {
       width: 100%;

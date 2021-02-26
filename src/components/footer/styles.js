@@ -107,5 +107,12 @@ export const Container = styled.div`
       align-items: center;
       justify-content: space-around;
     }
+
+    .footer_owner {
+      height: 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 `

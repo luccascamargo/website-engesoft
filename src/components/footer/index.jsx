@@ -48,6 +48,9 @@ export default function Footer() {
               <a target="_blank">Lucas Camargo</a>
             </Link>
           </span>
+          <Link href="#">
+            <a>versao ex</a>
+          </Link>
           <Link href="/">
             <a>
               <ArrowUpwardIcon />
