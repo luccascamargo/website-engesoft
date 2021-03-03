@@ -78,6 +78,7 @@ export const Container = styled.div`
         height: 150px;
 
         > h2 {
+          width: 60%;
           display: flex;
           flex-direction: column;
 
@@ -91,6 +92,12 @@ export const Container = styled.div`
           }
         }
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container .text > h2 {
+      width: 70%;
     }
   }
 

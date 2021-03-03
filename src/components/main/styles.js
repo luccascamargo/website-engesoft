@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  background: #e2e2e6;
   width: 100%;
   height: 70vh;
   display: flex;
