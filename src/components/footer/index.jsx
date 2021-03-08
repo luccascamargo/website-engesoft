@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 import { Container } from './styles'
-import LogoVercel from '../../assets/vercelWhite.svg'
+import LogoEngesoft from '../../assets/engesoft.svg'
 
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
 
@@ -11,10 +11,10 @@ export default function Footer() {
     <>
       <Container>
         <footer>
-          <div id="container-logo">
+          <div>
             <Link href="#">
               <a>
-                <LogoVercel width="150" alt="Vercel" />
+                <LogoEngesoft width="150" alt="Engesoft" />
               </a>
             </Link>
           </div>
@@ -23,8 +23,10 @@ export default function Footer() {
               Se você estiver interessado em trabalhar conosco ou apenas quer
               dizer um ola, envie-nos um email.
             </span>
-            <Link href="#">
-              <a className="email">contato@engesoft.com.br</a>
+            <Link href="mailto:contato@engesoft.com.br">
+              <a type="email" className="email">
+                contato@engesoft.com.br
+              </a>
             </Link>
             <p>
               Rua Pinheiro Machado, 2569 - sala 42 - São Pelegrino, Caxias do

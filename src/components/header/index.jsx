@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 import { Container } from './styles'
-import LogoVercel from '../../assets/vercelWhite.svg'
+import LogoEngesoft from '../../assets/engesoft.svg'
 
 export default function header() {
   return (
@@ -11,7 +11,7 @@ export default function header() {
         <div className="owner">
           <Link href="#">
             <a>
-              <LogoVercel className="logo-vercel" alt="Vercel" />
+              <LogoEngesoft width="150" alt="Engesoft" />
             </a>
           </Link>
           <Link href="/contato">

@@ -19,7 +19,7 @@ export const Container = styled.div`
     transition: 1s all;
 
     &:hover {
-      color: #ec5990;
+      color: #407ad1;
     }
   }
 
@@ -47,7 +47,7 @@ export const Container = styled.div`
 
     input {
       background: #e2e2e6;
-      border: 1px solid #222222;
+      border: 2px solid #222222;
       border-radius: 15px;
       width: 40em;
       height: 3em;
@@ -58,7 +58,7 @@ export const Container = styled.div`
       transition: 1s all;
 
       &:focus {
-        border: 1px solid #ec5990;
+        border: 2px solid #407ad1;
       }
     }
 
@@ -67,17 +67,18 @@ export const Container = styled.div`
       height: 3em;
       border: none;
       border-radius: 15px;
-      background: #ec5990;
+      background: #407ad1;
       margin-top: 5px;
       color: #e2e2e6;
       cursor: pointer;
       transition: 1s all;
       text-transform: uppercase;
       letter-spacing: 5px;
+      opacity: 0.7;
 
       &:hover {
-        background: #bf1650;
         color: #fff;
+        opacity: 1;
       }
       &:active {
         transition: 0.3s all;

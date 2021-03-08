@@ -21,11 +21,6 @@ export const Container = styled.div`
     justify-content: space-between;
     padding-top: 50px;
 
-    #container-logo {
-      width: 150px;
-      height: 30px;
-    }
-
     .text-center {
       display: flex;
       flex-direction: column;
@@ -75,7 +70,7 @@ export const Container = styled.div`
     }
 
     a:hover {
-      color: #ec5990;
+      color: #407ad1;
     }
   }
 
