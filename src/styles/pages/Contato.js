@@ -5,7 +5,7 @@ export const Container = styled.div`
     font-family: 'Roboto';
   }
   width: 100vw;
-  height: 90vh;
+  height: 85vh;
   background: #081229;
   display: flex;
   flex-direction: column;
@@ -205,7 +205,7 @@ export const Container = styled.div`
 
 export const Footer = styled.div`
   width: 100%;
-  height: 10vh;
+  height: 15vh;
   background: #081229;
 
   h2 {
@@ -233,14 +233,13 @@ export const Footer = styled.div`
     }
   }
 
-  @media (max-width: 500px) {
-    > h2 {
-      width: 90%;
+  @media (max-width: 425px) {
+    h2 {
+      width: 60%;
+      align-items: center;
 
-      .icon {
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 30px;
+      > span {
+        padding-bottom: 5px;
       }
     }
   }

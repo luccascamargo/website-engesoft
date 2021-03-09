@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { Container } from './styles'
-import LogoEngesoft from '../../assets/engesoft.svg'
 
 export default function header() {
   return (
@@ -10,8 +10,13 @@ export default function header() {
       <Container>
         <div className="owner">
           <Link href="#">
-            <a>
-              <LogoEngesoft width="150" alt="Engesoft" />
+            <a id="logo">
+              <Image
+                src="/engesoft.png"
+                width="150"
+                height="50"
+                alt="Engesoft"
+              />
             </a>
           </Link>
           <Link href="/contato">

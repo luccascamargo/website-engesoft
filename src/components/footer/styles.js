@@ -101,6 +101,10 @@ export const Container = styled.div`
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
+
+      > .text-center {
+        text-align: center;
+      }
     }
 
     .footer_owner {

@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { Container } from './styles'
-import LogoEngesoft from '../../assets/engesoft.svg'
 
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
 
@@ -14,7 +14,12 @@ export default function Footer() {
           <div>
             <Link href="#">
               <a>
-                <LogoEngesoft width="150" alt="Engesoft" />
+                <Image
+                  src="/engesoft.png"
+                  width="150"
+                  height="50"
+                  alt="Engesoft"
+                />
               </a>
             </Link>
           </div>

@@ -23,10 +23,6 @@ export const Container = styled.div`
   height: 100vh;
   background: url(${Img}) no-repeat center fixed;
 
-  .logo-vercel {
-    width: 150px;
-  }
-
   #button-header {
     position: relative;
     display: flex;
@@ -189,9 +185,13 @@ export const Container = styled.div`
       #013981,
       #0046a1
     );
-    .logo-vercel {
+
+    .mouse {
+      top: 80%;
+    }
+
+    #logo {
       margin-left: 10px;
-      width: 100px;
     }
 
     #button-header {
@@ -200,11 +200,6 @@ export const Container = styled.div`
     }
     div {
       width: 100%;
-
-      #logo {
-        padding-left: 15px;
-      }
-
       #button-header {
         margin-right: 15px;
         width: 100px;
