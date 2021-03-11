@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 100vw;
   height: 70vh;
+  background: #fff;
+  max-width: 1440px;
 
   .container {
     width: 75%;
@@ -62,7 +64,7 @@ export const Container = styled.div`
     margin: 15px;
   }
 
-  @media (min-width: 1594px) {
+  @media (min-width: 1440px) {
     .text {
       width: 30%;
     }
@@ -70,6 +72,8 @@ export const Container = styled.div`
 
   @media (max-width: 1024px) {
     .container {
+      width: 100%;
+      height: 80%;
       display: flex;
       flex-direction: column;
 
@@ -83,11 +87,11 @@ export const Container = styled.div`
           flex-direction: column;
 
           > span {
-            font-size: 1em;
+            font-size: 1.5em;
           }
 
           > p {
-            font-size: 0.8rem;
+            font-size: 1rem;
             margin-top: 1rem;
           }
         }
@@ -96,22 +100,39 @@ export const Container = styled.div`
   }
 
   @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      height: 100%;
+    }
     .container .text > h2 {
+      width: 100%;
+    }
+
+    .clients {
       width: 70%;
     }
   }
 
   @media (max-width: 425px) {
-    .container > .text {
-      width: 100%;
+    > .container > .text {
+      width: 95%;
+      > h2 > span {
+        font-size: 1.3em;
+      }
     }
 
     .clients {
-      display: flex;
-      padding: 10px;
+      width: 100%;
+    }
+  }
+  @media (max-width: 375px) {
+    > .container > .text {
+      > h2 > span {
+        font-size: 1em;
+      }
 
-      .logo-vercel {
-        width: 100px;
+      > h2 > p {
+        font-size: 0.7em;
       }
     }
   }
