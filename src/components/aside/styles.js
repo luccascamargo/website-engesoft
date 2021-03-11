@@ -58,7 +58,7 @@ export const Container = styled.div`
         background: #e1e1e6;
         width: 9em;
         height: 10em;
-        margin: 0 10px 0 10px;
+        margin: 0 5px 0 5px;
         display: flex;
         flex-grow: 1;
         flex-direction: column;
@@ -105,13 +105,24 @@ export const Container = styled.div`
     }
 
     > main > aside > div {
-      width: 6em;
-      height: 7.5em;
+      width: 5em;
+      height: 7em;
       margin-bottom: 1em;
+    }
+    > main > aside > div span {
+      font-size: 0.9em;
     }
   }
 
-  @media (max-width: 347px) {
+  @media (max-width: 375px) {
     height: 85vh;
+
+    > main > aside {
+      width: 80%;
+    }
+
+    > main > h2 {
+      max-width: 80%;
+    }
   }
 `

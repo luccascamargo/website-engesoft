@@ -52,12 +52,6 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
-    h1 {
-      margin-top: 40px;
-    }
-  }
-
   @media (max-width: 618px) {
     h1 {
       max-width: 500px;
@@ -65,12 +59,16 @@ export const Container = styled.div`
   }
 
   @media (max-width: 425px) {
+    height: 65vh;
     h1 {
       max-width: 300px;
 
       p {
         font-size: 15px;
       }
+    }
+    #link {
+      display: none;
     }
   }
 `
