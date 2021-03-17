@@ -5,6 +5,7 @@ export const Container = styled.div`
   height: 70vh;
   background: #fff;
   max-width: 1440px;
+  margin: auto;
 
   .container {
     width: 75%;
@@ -12,7 +13,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: auto;
   }
 
   .text {
