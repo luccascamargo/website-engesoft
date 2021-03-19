@@ -34,7 +34,7 @@ export const Container = styled.div`
   > main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 70%;
@@ -56,8 +56,8 @@ export const Container = styled.div`
 
       > div {
         background: #e1e1e6;
-        width: 9em;
-        height: 10em;
+        width: 12em;
+        height: 12em;
         margin: 0 5px 0 5px;
         display: flex;
         flex-grow: 1;
@@ -66,6 +66,12 @@ export const Container = styled.div`
         justify-content: center;
         border-radius: 3px;
         position: initial;
+        transition: 0.3s all;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.1);
+        }
 
         > span {
           font-weight: 400;
@@ -93,28 +99,28 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 700px) {
-    height: 80vh;
+  @media (max-width: 768px) {
+    height: 55vh;
 
-    main > h2 {
-      font-size: 1.2em;
+    > main {
+      height: 50%;
     }
 
-    .link-cases {
-      margin-top: 1em;
+    main > h2 {
+      font-size: 1.3em;
     }
 
     > main > aside > div {
-      width: 5em;
-      height: 7em;
+      width: 10em;
+      height: 10em;
       margin-bottom: 1em;
     }
     > main > aside > div span {
-      font-size: 0.9em;
+      font-size: 1em;
     }
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 425px) {
     height: 85vh;
 
     > main > aside {
@@ -123,6 +129,34 @@ export const Container = styled.div`
 
     > main > h2 {
       max-width: 80%;
+    }
+  }
+
+  @media (max-width: 375px) {
+    height: 85vh;
+
+    > main > aside {
+      width: 100%;
+    }
+
+    > main > h2 {
+      max-width: 80%;
+    }
+  }
+
+  @media (max-width: 320px) {
+    height: 60vh;
+    > main {
+      justify-content: center;
+    }
+
+    > main {
+      height: 70%;
+
+      > aside > div {
+        width: 8em;
+        height: 8em;
+      }
     }
   }
 `

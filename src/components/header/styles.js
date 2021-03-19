@@ -75,7 +75,7 @@ export const Container = styled.div`
     }
   }
 
-  > div {
+  > .owner {
     margin: 0 auto;
     width: 70%;
     height: 100px;
@@ -137,7 +137,11 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 820px) {
+  @media (max-width: 768px) {
+    .owner {
+      width: 90%;
+    }
+
     h1 > span {
       font-size: 2rem;
     }
@@ -176,7 +180,7 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 425px) {
     background-image: linear-gradient(
       to right top,
       #081229,
@@ -185,6 +189,10 @@ export const Container = styled.div`
       #013981,
       #0046a1
     );
+
+    .owner > nav > ul {
+      display: none;
+    }
 
     .mouse {
       top: 80%;

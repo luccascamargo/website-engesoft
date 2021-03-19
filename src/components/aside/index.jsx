@@ -1,40 +1,33 @@
 import React from 'react'
-import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import { Container } from './styles'
 
-import FinancialLogo from '../../assets/svg/013-financial.svg'
+import ClubsLogo from '../../assets/svg/020-loan.svg'
+import GestaoLogo from '../../assets/svg/024-payment-method.svg'
+import ContabillLogo from '../../assets/svg/005-cash.svg'
 
 export default function Aside() {
+  const router = useRouter()
+
   return (
     <Container>
       <main>
         <h2>Conheça apenas algumas de nossas funcionalidades</h2>
         <aside>
-          <div>
-            <FinancialLogo width="100" height="100" />
-            <span>Faturamento</span>
+          <div onClick={() => router.push('/gestao')}>
+            <GestaoLogo width="120" height="120" />
+            <span>Sistema de Gestao</span>
           </div>
-          <div>
-            <FinancialLogo width="100" height="100" />
-            <span>Faturamento</span>
+          <div onClick={() => router.push('/contabil')}>
+            <ContabillLogo width="120" height="120" />
+            <span>Sistema Contabil</span>
           </div>
-          <div>
-            <FinancialLogo width="100" height="100" />
-            <span>Faturamento</span>
-          </div>
-          <div>
-            <FinancialLogo width="100" height="100" />
-            <span>Faturamento</span>
-          </div>
-          <div>
-            <FinancialLogo width="100" height="100" />
-            <span>Faturamento</span>
+          <div onClick={() => router.push('/clubs')}>
+            <ClubsLogo width="120" height="120" />
+            <span>Sistema para Clubes</span>
           </div>
         </aside>
-        <Link href="/">
-          <a className="link-cases">Saiba mais</a>
-        </Link>
       </main>
     </Container>
   )
